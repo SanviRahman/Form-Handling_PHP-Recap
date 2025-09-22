@@ -21,7 +21,7 @@
 
         <pre></pre>
         <label for="Website">Website</label>
-        <input type="website" name="website" id="website" placeholder="Enter your website" required>
+        <input type="website" name="website" id="website" placeholder="Enter your website..." required>
 
         <pre></pre>
         comment: <textarea name="comment" rows="5" cols="40"></textarea>
