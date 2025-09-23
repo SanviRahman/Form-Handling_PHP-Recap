@@ -17,7 +17,7 @@
     {
         $data = trim($data);
         $data = stripslashes($data);
-        $data = htmlspecialchars($data, ENT_QUOTES, "UTF-8");
+        $data = htmlspecialchars($data);
 
         return $data;
     }
