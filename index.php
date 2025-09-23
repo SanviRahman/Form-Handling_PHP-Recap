@@ -14,14 +14,17 @@
     <form action="welcome.php" method="post">
         <label for="name">Name:</label>
         <input type="name" name="name" id="email" placeholder="Enter your name..." required>
+        <span class="error">* <?php echo $nameErr; ?></span>
 
         <pre></pre>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+        <span class="error">* <?php echo $emailErr; ?></span>
 
         <pre></pre>
         <label for="Website">Website</label>
         <input type="website" name="website" id="website" placeholder="Enter your website..." required>
+        <span class="error">* <?php echo $websiteErr; ?></span>
 
         <pre></pre>
         comment: <textarea name="comment" rows="5" cols="40"></textarea>
@@ -31,6 +34,7 @@
         <input type="radio" name="gender" value="Female" required>Female
         <input type="radio" name="gender" value="Male" required>Male
         <input type="radio" name="gender" value="Others" required>Others
+        <span class="error">* <?php echo $genderErr; ?></span>
 
         <pre></pre>
         <button type="submit">Submit</button>
